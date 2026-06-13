@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>페어 정리틀</title>
+<title>페어 서사 정리틀</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
 :root{
@@ -208,7 +208,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
 <div class="app">
 <!-- ===== EDIT PANEL ===== -->
 <div class="panel">
-  <h2>♡ 페어 정리틀</h2>
+  <h2>♡ 페어 서사 정리틀</h2>
   <div class="actions">
     <button id="btnSave">임시저장</button>
     <button id="btnLoad">불러오기</button>
@@ -310,7 +310,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
   <div class="pair-hdr">
     <div class="banner" id="bannerEl" onclick="trigUp(this,event)">
       <img id="bannerImg" alt="">
-      <span class="ph">♡ 커플컷 배너 (클릭해서 업로드)</span>
+      <span class="ph">♡ 배너 (클릭해서 업로드)</span>
       <div class="banner-fade"></div>
       <button class="banner-reup" onclick="event.stopPropagation();trigUp(this.parentElement,event)">이미지 변경</button>
       <div class="banner-credit"><span class="ct" contenteditable="true">ⓒ 출처</span><button class="cx" onclick="event.stopPropagation();hideCredit(this)">✕</button></div>
@@ -327,7 +327,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
         </div>
         <div class="prof-credit"><span class="ct" contenteditable="true">ⓒ 출처</span><button class="cx" onclick="hideCredit(this)">✕</button></div>
         <div class="prof-name" contenteditable="true">NAME</div>
-        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 등"></div>
+        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 / 키워드 등"></div>
       </div>
       <div class="rel-box">
         <div class="ship-name" contenteditable="true">캐릭터A ✕ 캐릭터B</div>
@@ -346,7 +346,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
         </div>
         <div class="prof-credit"><span class="ct" contenteditable="true">ⓒ 출처</span><button class="cx" onclick="hideCredit(this)">✕</button></div>
         <div class="prof-name" contenteditable="true">NAME</div>
-        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 등"></div>
+        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 / 키워드 등"></div>
       </div>
     </div>
   </div>
@@ -372,10 +372,10 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
     </div>
     <div class="imsg-body" id="msgBody">
       <div class="imsg-date"><span class="dt" contenteditable="true">오늘 오후 9:14</span><button class="dx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow left"><div class="bub" contenteditable="true">오늘 뭐해?</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow right"><div class="bub" contenteditable="true">너 생각 중이었어 ㅎㅎ</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow left"><div class="bub" contenteditable="true">진짜? 보고싶다</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow right"><div class="bub" contenteditable="true">나도 ♡</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow left"><div class="bub" contenteditable="true">안녕하세요</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow right"><div class="bub" contenteditable="true">이곳에 메시지를 넣으시면 됩니다!</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow left"><div class="bub" contenteditable="true">페어의 대화를 넣어보아요 ^_^</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow right"><div class="bub" contenteditable="true">♡</div><button class="mx" onclick="rmNode(this)">✕</button></div>
     </div>
     <div class="msg-ctrl">
       <button onclick="addBub('left')">+ A 말풍선</button>
