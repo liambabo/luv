@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>페어 정리틀</title>
+<title>페어 서사 정리틀</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
 :root{
@@ -207,7 +207,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
 <div class="app">
 <!-- ===== EDIT PANEL ===== -->
 <div class="panel">
-  <h2>♡ 페어 정리틀</h2>
+  <h2>♡ 페어 서사 정리틀</h2>
   <div class="lbl">미리보기 확대/축소</div>
   <div style="display:flex;align-items:center;gap:6px;">
     <input type="range" id="previewZoom" min="30" max="100" value="100" style="flex:1;">
@@ -333,7 +333,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
         </div>
         <div class="prof-credit"><span class="ct" contenteditable="true">ⓒ 출처</span><button class="cx" onclick="hideCredit(this)">✕</button></div>
         <div class="prof-name" contenteditable="true">NAME</div>
-        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 등"></div>
+        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 / 키워드 등"></div>
       </div>
       <div class="rel-box">
         <div class="ship-name" contenteditable="true">캐릭터A ✕ 캐릭터B</div>
@@ -352,7 +352,7 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
         </div>
         <div class="prof-credit"><span class="ct" contenteditable="true">ⓒ 출처</span><button class="cx" onclick="hideCredit(this)">✕</button></div>
         <div class="prof-name" contenteditable="true">NAME</div>
-        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 등"></div>
+        <div class="prof-info" contenteditable="true" data-ph="나이 / 키 / 직업 / 키워드 등"></div>
       </div>
     </div>
   </div>
@@ -374,14 +374,14 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);pad
         <div class="av" onclick="trigUp(this,event)"><img alt=""><span class="ph">A</span><input type="file" accept="image/*"></div>
         <div class="av" onclick="trigUp(this,event)"><img alt=""><span class="ph">B</span><input type="file" accept="image/*"></div>
       </div>
-      <div><div class="chat-title" contenteditable="true">캐릭터A, 캐릭터B</div><div class="chat-sub" contenteditable="true">대화 제목</div></div>
+      <div><div class="chat-title" contenteditable="true">캐릭터A, 캐릭터B</div><div class="chat-sub" contenteditable="true">대화 제목, 이미지 출처 등</div></div>
     </div>
     <div class="imsg-body" id="msgBody">
       <div class="imsg-date"><span class="dt" contenteditable="true">오늘 오후 9:14</span><button class="dx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow left"><div class="bub" contenteditable="true">오늘 뭐해?</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow right"><div class="bub" contenteditable="true">너 생각 중이었어 ㅎㅎ</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow left"><div class="bub" contenteditable="true">진짜? 보고싶다</div><button class="mx" onclick="rmNode(this)">✕</button></div>
-      <div class="brow right"><div class="bub" contenteditable="true">나도 ♡</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow left"><div class="bub" contenteditable="true">안녕하세요</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow right"><div class="bub" contenteditable="true">이곳에 메시지를 입력하시면 됩니다</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow left"><div class="bub" contenteditable="true">옆에 X를 눌러 삭제, 아래 버튼을 통해 말풍선 추가가 가능합니다</div><button class="mx" onclick="rmNode(this)">✕</button></div>
+      <div class="brow right"><div class="bub" contenteditable="true">페어의 일상 대화를 넣어 보아요 ♡</div><button class="mx" onclick="rmNode(this)">✕</button></div>
     </div>
     <div class="msg-ctrl">
       <button onclick="addBub('left')">+ A 말풍선</button>
